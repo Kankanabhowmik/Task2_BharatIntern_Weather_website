@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <div id="weather-container">
-        <h2>Weather App</h2>
-        <input type="text" id="city" placeholder="Enter city">
-        <button onclick="getWeather()">Search</button>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/kankana-bhowmik-42a0bb228">About</a></li>
+        <li><a href="https://github.com/Kankanabhowmik">Projects</a></li>
+        <li><a href="mailto:kankanab908@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <img id="weather-icon" alt="Weather Icon">
+  <section id="about">
+    <h2>About me.</h2>
+    <p>Welcome to my portfolio! I am a passionate developer...
 
-        <div id="temp-div"></div>
+      I am a Web Development Intern at Bharat Intern, a software company that provides web and mobile solutions for various clients. I have been working on developing and testing responsive and user-friendly websites using HTML5, CSS, JavaScript, and Firebase.
 
-        <div id="weather-info"></div>
+      Besides my internship, I am also a Firebase LEAD at Google Developer Students Club of Techno International New Town (GDSC-TINT), where I help students learn and apply Firebase, Google's platform for building and scaling web and mobile applications. I have organized and facilitated several workshops, hackathons, and projects that showcase the power and versatility of Firebase. Additionally, I am a certified Hacktoberfest Contributor, having contributed to multiple open source projects on GitHub using Web Development, Python, and C. 
+      
+      I am passionate about developing innovative and user-friendly solutions that solve real-world problems and make a positive impact. I am currently pursuing a Bachelor of Technology degree in Computer Science and Engineering at Techno India College of Technology, where I have acquired skills and knowledge in various fields, such as HTML5, Emotional Intelligence, and Machine Learning. I am eager to learn new technologies, collaborate with diverse teams, and grow as a professional and a leader
+    </p>
+  </section>
 
-        <div id="hourly-forecast"></div>
+  <section id="project">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>The "Alarm clock using C" project is a software application developed in the C programming language that functions as a digital alarm clock. This project allows users to set alarms, customize alarm tones, and manage multiple alarms simultaneously. It includes features such as snooze, repeat alarms, and the ability to display the current time and date. The program utilizes various C libraries for timekeeping and user interface interactions, providing a reliable and efficient solution for managing wake-up times and reminders on computer systems.</p>
+      <a href="https://github.com/Kankanabhowmik/Alarm-clock-using-C">View Project</a>
     </div>
-    <script src="./script.js"></script>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>The "Python language" project involves the exploration, development, and application of Python, a high-level, interpreted programming language known for its simplicity and readability. This project encompasses various aspects, including learning the syntax and semantics of Python, mastering its built-in data structures and functions, and understanding its vast ecosystem of libraries and frameworks for diverse purposes such as web development, data analysis, machine learning, and automation. Additionally, the project may involve contributing to the Python community by writing and sharing code, participating in open-source projects, or teaching others about Python through tutorials and documentation. Overall, the project aims to empower developers with the skills and knowledge to leverage Python effectively for solving a wide range of problems in different domains.</p>
+      <a href="https://github.com/Kankanabhowmik/Python_Lang">View Project</a>
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
